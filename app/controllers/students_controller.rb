@@ -3,7 +3,7 @@ class StudentsController < ActionController::Base
     @students = Student.all
   end
   def show
-    @student = params[:student]
+    @student = Student.find(params[:id])
   end
   def new
     new_student = Student.new(parmas)
