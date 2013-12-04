@@ -1,9 +1,9 @@
 class StudentsController < ActionController::Base
   def index
-  @students = Student.all
+    @students = Student.all
   end
   def show
-    @sudent = params[:student]
+    @student = params[:student]
   end
   def new
     new_student = Student.new(parmas)
