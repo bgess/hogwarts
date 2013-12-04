@@ -6,4 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-House.create([{name:'Hufflepuff'}, {name:'Slitherin'}])
+houses = House.create([{name:'Hufflepuff'}, {name:'Slitherin'}])
+
+Student.create([{name:"Harry", house: houses.first}])
