@@ -1,4 +1,4 @@
-class HousesController < ActionController
+class HousesController < ActionController::Base
   def index
     @house = House.all
   end
