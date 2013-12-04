@@ -1,6 +1,5 @@
 class HousesController < ActionController::Base
   def index
-    @house = House.all
+    @houses = House.all
   end
-
 end
